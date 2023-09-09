@@ -108,13 +108,19 @@ S.deleteStudent(nameS);                    break;
 l.getLessonByName(name1);
                     break;
                 case 13:
-                    System.out.println();
-                    break;
+                    System.out.println("Enter a lesson name to get ");
+                    String nameToGGet= scanner.nextLine();
+l.getLessonByName(nameToGGet);
+break;
                 case 14:
-                    System.out.println();
+                    System.out.println("Enter a name to delete");
+                    String nameOfLessonToDelete=scanner.nextLine();
+                    l.deleteLesson(nameOfLessonToDelete);
                     break;
                 case 15:
-                    System.out.println();
+                    System.out.println("Enter a name of group to delete");
+                    String NameOfGroupToDelete= scanner.nextLine();
+                    G.deleteGroup(NameOfGroupToDelete);
                     break;
             }
         }
